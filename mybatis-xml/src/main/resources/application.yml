@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.249.0.25:3307/baseinfo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+#mybatis.typeAliasesPackage：为实体对象所在的包，跟数据库表一一对应
+#mybatis.mapperLocations：mapper文件的位置
+
+mybatis:
+  typeAliasesPackage: com.lym.springboot.mybatis.xml.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
+logging:
+  level:
+    com:
+      lym:
+       springboot:
+         mybatis:
+           xml:
+            mapper: debug
