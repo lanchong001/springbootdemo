@@ -6,7 +6,6 @@
 		<groupId>com.lym.springboot</groupId>
 		<artifactId>springboot-demo</artifactId>
 		<version>1.0.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.lym.springboot</groupId>
 	<artifactId>mybatis-annotation</artifactId>
