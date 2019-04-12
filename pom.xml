@@ -28,6 +28,7 @@
         <module>jpa-druid-javaconfig</module>
         <module>mybatis-xml</module>
         <module>mybatis-annotation</module>
+        <module>maven-springboot-web</module>
     </modules>
 
     <properties>

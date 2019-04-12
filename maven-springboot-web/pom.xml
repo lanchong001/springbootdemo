@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springbootdemo</artifactId>
+        <groupId>com.lym.springboot</groupId>
+        <version>1.0.0</version>
+        <!--<relativePath></relativePath>  增加这行配置,maven 执行时会报错: Could not find artifact com.lym.springboot:springbootdemo:pom:1.0.0 找不到父类包-->
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lym.springboot.maven.springboot.web</groupId>
+    <artifactId>maven-springboot-web</artifactId>
+
+    <dependencies>
+        <!--spring boot web 开发启动依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
