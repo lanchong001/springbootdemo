@@ -2,9 +2,13 @@
 ---
 名称 | 描述 | 时间
 -- | -- | --
-jdbctemplate | JdbcTemplate访问Mysql数据库 | 2019.04.01
-
-
+jdbctemplate | JdbcTemplate访问Mysql数据库 | 2019.04.11
+jpa | jpa 访问Mysql数据库 | 2019.04.11
+mybatis-annotation | mybatis mapper注解方式访问mysql数据库 | 2019.04.11
+mybatis-xml | mybatis xml 配置方式访问mysql数据库 | 2019.04.11
+jpa-druid-javaconfig | jpa访问mysql数据库,采用java bean config配置方式集成druid数据访问线程池 | 2019.04.12
+jpa-druid-yml | jpa访问mysql数据库,采用yml配置文件的方式集成druid数据访问线程池 | 2019.04.12
+---
 ### Spring Boot 多模块父子依赖
 
 1. 创建父项目工程
