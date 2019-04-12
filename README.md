@@ -20,10 +20,11 @@ jpa-druid-yml | jpa访问mysql数据库,采用yml配置文件的方式集成drui
     <!-- 1.基本信息 -->
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+    <name>springbootdemo</name>
 
     <!-- 2.项目说明：这里作为聚合工程的父工程 -->
     <groupId>com.lym.springboot</groupId>
-    <artifactId>springboot-demo</artifactId>
+    <artifactId>springbootdemo</artifactId>
     <version>1.0.0</version>
 
     <!-- 3. 继承说明：这里继承SpringBoot提供的父工程 -->
