@@ -5,7 +5,7 @@
 	<!--继承spring boot的父级项目依赖-->
 	<parent>
 		<groupId>com.lym.springboot</groupId>
-		<artifactId>springboot-demo</artifactId>
+		<artifactId>springbootdemo</artifactId>
 		<version>1.0.0</version>
 	</parent>
 	<groupId>com.lym.springboot</groupId>

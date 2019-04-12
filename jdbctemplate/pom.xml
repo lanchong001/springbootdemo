@@ -9,7 +9,7 @@
 	<!-- 2.继承说明：这里继承SpringBoot提供的父工程 -->
 	<parent>
 		<groupId>com.lym.springboot</groupId>
-		<artifactId>springboot-demo</artifactId>
+		<artifactId>springbootdemo</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
