@@ -23,6 +23,8 @@
     <modules>
         <module>jdectemplate</module>
         <module>jpa</module>
+        <module>jpa-druid-yml</module>
+        <module>jpa-druid-javaconfig</module>
         <module>mybatis-xml</module>
         <module>mybatis-annotation</module>
     </modules>
