@@ -1,6 +1,6 @@
-package com.lym.springboot.jdectemplate.mapper;
+package com.lym.springboot.jdbctemplate.mapper;
 
-import com.lym.springboot.jdectemplate.domain.User;
+import com.lym.springboot.jdbctemplate.domain.User;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.lang.Nullable;
 

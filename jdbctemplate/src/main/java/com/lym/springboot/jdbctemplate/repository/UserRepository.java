@@ -1,6 +1,6 @@
-package com.lym.springboot.jdectemplate.repository;
+package com.lym.springboot.jdbctemplate.repository;
 
-import com.lym.springboot.jdectemplate.domain.User;
+import com.lym.springboot.jdbctemplate.domain.User;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.lym.springboot.jdectemplate.repository;
+package com.lym.springboot.jdbctemplate.repository;
 
-import com.lym.springboot.jdectemplate.domain.User;
+import com.lym.springboot.jdbctemplate.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,8 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * @Author: in liuyuanming

@@ -1,4 +1,4 @@
-package com.lym.springboot.jdectemplate.domain;
+package com.lym.springboot.jdbctemplate.domain;
 
 /**
  * @Author: in liuyuanming

@@ -1,4 +1,4 @@
-package com.lym.springboot.jdectemplate;
+package com.lym.springboot.jdbctemplate;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

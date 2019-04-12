@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<!-- 1.基本信息 -->
 	<modelVersion>4.0.0</modelVersion>
-	<name>jdectemplate</name>
-	<description>jdectemplate demo</description>
+	<name>jdbctemplate</name>
+	<description>jdbctemplate demo</description>
 
 	<!-- 2.继承说明：这里继承SpringBoot提供的父工程 -->
 	<parent>
@@ -15,7 +15,7 @@
 
 	<!-- 3.项目说明：这里作为聚合工程的子工程 -->
 	<groupId>com.lym.springboot</groupId>
-	<artifactId>jdectemplate</artifactId>
+	<artifactId>jdbctemplate</artifactId>
 	<version>1.0.0</version>
 
 	<!-- 4.模块相关依赖 -->

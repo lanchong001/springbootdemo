@@ -1,8 +1,8 @@
-package com.lym.springboot.jdectemplate.repository.impl;
+package com.lym.springboot.jdbctemplate.repository.impl;
 
-import com.lym.springboot.jdectemplate.domain.User;
-import com.lym.springboot.jdectemplate.mapper.UserRowMapper;
-import com.lym.springboot.jdectemplate.repository.UserRepository;
+import com.lym.springboot.jdbctemplate.domain.User;
+import com.lym.springboot.jdbctemplate.mapper.UserRowMapper;
+import com.lym.springboot.jdbctemplate.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
