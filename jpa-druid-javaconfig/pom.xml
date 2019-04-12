@@ -8,9 +8,9 @@
 		<version>1.0.0</version>
 	</parent>
 	<groupId>com.lym.springboot</groupId>
-	<artifactId>java-druid-javaconfig</artifactId>
+	<artifactId>jpa-druid-javaconfig</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java-druid-javaconfig</name>
+	<name>jpa-druid-javaconfig</name>
 	<description>jpa demo</description>
 
 	<properties>

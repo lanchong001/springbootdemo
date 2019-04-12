@@ -3,6 +3,9 @@
 # Compiled class file
 *.class
 
+# IDEA file
+*.iml
+
 # Log file
 *.log
 
