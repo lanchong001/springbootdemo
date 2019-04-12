@@ -1,4 +1,4 @@
-### jpa durid yml 配置文件的方式
+### jpa durid java config 配置方式
 ---
 1. 引入druid相关的依赖
 ```
