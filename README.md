@@ -10,7 +10,7 @@ jpa-druid-javaconfig | jpa访问mysql数据库,采用java bean config配置方�
 jpa-druid-yml | jpa访问mysql数据库,采用yml配置文件的方式集成druid数据访问线程池 | 2019.04.12
 maven-springboot-web | 通过Maven脚手架创建SpringBoot项目 | 2019.04.12
 lombok | lombok应用 | 2019.04.13
-
+logback | Spring Boot 自带日志库 | 2019.04.13
 
 ### Spring Boot 多模块父子依赖
 ---

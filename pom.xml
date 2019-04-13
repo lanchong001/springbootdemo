@@ -30,6 +30,7 @@
         <module>mybatis-annotation</module>
         <module>maven-springboot-web</module>
         <module>lombok</module>
+        <module>logback</module>
     </modules>
 
     <properties>
