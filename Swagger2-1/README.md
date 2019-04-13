@@ -106,3 +106,8 @@ public class SwaggerConfig {
       <script src='webjars/springfox-swagger-ui/lang/zh-cn.js' type='text/javascript'></script>
     </head>
 ```
+
+---
+### 扩展功能
+
+https://github.com/SpringForAll/spring-boot-starter-swagger
