@@ -32,6 +32,7 @@
         <module>lombok</module>
         <module>logback</module>
         <module>global-exception-handler</module>
+        <module>Swagger2-1</module>
     </modules>
 
     <properties>
