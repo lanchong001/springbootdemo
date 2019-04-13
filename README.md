@@ -11,6 +11,7 @@ jpa-druid-yml | jpa访问mysql数据库,采用yml配置文件的方式集成drui
 maven-springboot-web | 通过Maven脚手架创建SpringBoot项目 | 2019.04.12
 lombok | lombok应用 | 2019.04.13
 logback | Spring Boot 自带日志库 | 2019.04.13
+global-exception-handler | Spring MVC 全局异常处理 | 2019.04.13
 
 ### Spring Boot 多模块父子依赖
 ---
