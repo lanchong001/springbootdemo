@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+# 开发时,关闭 thymeleaf 模板引擎; 上线运行时,打开;
+    cache: false
+# 使用遗留的html5,去掉验证的html标签验证,防止报错;
+    mode: LEGACYHTML5

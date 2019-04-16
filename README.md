@@ -13,6 +13,7 @@ lombok | lombok应用 | 2019.04.13
 logback | Spring Boot 自带日志库 | 2019.04.13
 global-exception-handler | Spring MVC 全局异常处理 | 2019.04.13
 Swagger2-1 | 采用 io.springfox.springfox-swagger2 实现WebApi文档 | 2019.04.13
+thymeleaf | Spring Boot thymeleaf 模板引擎的使用 | 2019.04.16
 
 ### Spring Boot 多模块父子依赖
 ---
