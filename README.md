@@ -16,6 +16,8 @@ Swagger2-1 | 采用 io.springfox.springfox-swagger2 实现WebApi文档 | 2019.04
 thymeleaf | Spring Boot thymeleaf 模板引擎的使用 | 2019.04.16
 thymeleaf-layui | Spring Boot thymeleaf, Layui 模板引擎的使用 | 2019.04.16
 websocket | Spring Boot websocket 的使用 | 2019.04.17
+spring-boot-cache | Spring Boot cache 的使用 | 2019.04.18
+
 
 ### Spring Boot 多模块父子依赖
 ---
