@@ -34,6 +34,8 @@
         <module>global-exception-handler</module>
         <module>Swagger2-1</module>
         <module>thymeleaf</module>
+        <module>thymeleaf-layui</module>
+        <module>websocket</module>
     </modules>
 
     <properties>
