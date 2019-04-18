@@ -19,6 +19,12 @@ websocket | Spring Boot websocket 的使用 | 2019.04.17
 spring-boot-cache | Spring Boot cache 的使用 | 2019.04.18
 
 
+http://www.importnew.com/26055.html
+https://blog.csdn.net/gnail_oug/article/details/80662553
+https://segmentfault.com/a/1190000008847948
+https://segmentfault.com/a/1190000014479154
+
+
 ### Spring Boot 多模块父子依赖
 ---
 1. 创建父项目工程
