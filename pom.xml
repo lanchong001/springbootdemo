@@ -37,6 +37,7 @@
         <module>thymeleaf-layui</module>
         <module>websocket</module>
         <module>spring-boot-cache</module>
+        <module>spring-boot-java-config</module>
     </modules>
 
     <properties>
