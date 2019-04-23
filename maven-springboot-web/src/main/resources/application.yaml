@@ -1,0 +1,6 @@
+server:
+# 配置服务器端口号
+  port: 9090
+  servlet:
+# 配置应用的访问路径(虚拟目录)
+    context-path: /yml

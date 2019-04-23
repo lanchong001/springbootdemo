@@ -10,7 +10,7 @@ import java.util.List;
  * @Description:
  * @Date:Created in  2019/4/11/011 17:42
  */
-@Mapper
+
 public interface UserMapper {
 
     @Select("select * from user ")
