@@ -18,6 +18,7 @@ thymeleaf-layui | Spring Boot thymeleaf, Layui 模板引擎的使用 | 2019.04.1
 websocket | Spring Boot websocket 的使用 | 2019.04.17
 spring-boot-cache | Spring Boot cache 的使用 | 2019.04.18
 spring-boot-java-config | Spring Boot Java Config 的使用 | 2019.04.23
+spring-boot-velocity | 使用velocity模板引擎 | 2019.04.23
 
 http://www.importnew.com/26055.html
 https://blog.csdn.net/gnail_oug/article/details/80662553
