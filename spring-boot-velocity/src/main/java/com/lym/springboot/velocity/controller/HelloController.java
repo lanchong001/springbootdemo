@@ -12,6 +12,6 @@ public class HelloController {
         model.addAttribute("message","很高兴认识你");
         model.addAttribute("fromUserName","pp");
         model.addAttribute("time","2019-04-23");
-        return "index";
+        return "index.vm";
     }
 }

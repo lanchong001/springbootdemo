@@ -39,6 +39,7 @@
         <module>spring-boot-cache</module>
         <module>spring-boot-java-config</module>
         <module>spring-boot-velocity</module>
+        <module>spring-boot-velocity-generate-code</module>
     </modules>
 
     <properties>

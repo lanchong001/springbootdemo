@@ -1,5 +1,11 @@
 spring:
-  mvc:
-    view:
-      suffix: vm
-      prefix: /templates/
+  velocity:
+    suffix: .vm
+    check-template-location: true
+    properties:
+      resource:
+        loader: spring
+    spring:
+      loader:
+        class: org.springframework.ui.velocity.SpringResourceLoader
+        cache: true

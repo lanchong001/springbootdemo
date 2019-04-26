@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>websocket</title>
+    <script type="text/javascript" th:src="@{/js/sockjs.min.js}" ></script>
+    <script type="text/javascript"  th:src="@{/js/stomp.min.js}" ></script>
+    <script type="text/javascript"  th:src="@{/js/jquery.js}" ></script>
+    <script type="text/javascript" th:inline="javascript">
+
+        var stompClient = null;
+
+        //连接
+        function connect() {
+            var sock = new SockJS("/websocket");
+            stompClient = Stomp.over(sock);
+            stompClient.connect('guest', 'guest', function (frame) {
+                // 注册发送消息
+                stompClient.subscribe('/user/topic/send', function (msg) {
+                    var row = JSON.parse(msg.body);
+                    var trHtml = "<tr><td>" + row.message + "</td><td> " + row.date + "</td></tr>";
+                    $("#table1 tbody").append(trHtml);
+                });
+                // 注册推送时间回调
+                stompClient.subscribe('/user/topic/callback', function (r) {
+                    $('#data_time').text('当前服务器时间：' + r.body);
+                });
+            });
+        }
+
+        //断开连接
+        function disconnect() {
+            if (stompClient != null) {
+                stompClient.disconnect();
+            }
+        }
+
+        //发送消息
+        function send() {
+            stompClient.send("/user/app/send", {}, JSON.stringify({
+                'message': $("#message").val()
+            }));
+        }
+    </script>
+</head>
+<body>
+
+<label>WebSocket连接状态:</label>
+<button type="button" click="connect()">连接</button>
+<button type="button" click="disconnect()">断开</button>
+<br/>
+<br/>
+<div>
+    <label id="data_time"></label> <br/> <br/>
+    <input type="text" id="message" placeholder="请输入内容..."/>
+    <button click="send()" type="button">发送</button>
+    <br/> <br/> 消息列表： <br/>
+    <table id="table1">
+        <thead>
+        <tr>
+            <th>内容</th>
+            <th>时间</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
