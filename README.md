@@ -23,6 +23,11 @@ spring-boot-velocity-generate-code | Spring Boot Velocity 代码生成器 | 2019
 spring-boot-shiro | Spring Boot 与 Shiro 的整合 | 2019.05.06
 spring-boot-junit | spring boot 单元测试 | 2019.05.06
 reflection | WebApi 反射 Demo | 2019.05.07
+spring-boot-javamelody | Java 应用监控平台JavaMelody之Spring Boot整合 | 2019.05.10
+spring-boot-starter | 快速开发一个自定义 Spring Boot Starter，并使用它 | 2019.05.10
+spring-boot-starter-client | spring-boot-start jar包引用测试Demo | 2019.05.10
+
+
 
 http://www.importnew.com/26055.html
 https://blog.csdn.net/gnail_oug/article/details/80662553

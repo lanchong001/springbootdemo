@@ -4,3 +4,5 @@ spring:
     url: jdbc:mysql://10.249.0.25:3307/baseinfo?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
+server:
+  port: 8081
