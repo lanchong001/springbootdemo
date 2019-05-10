@@ -1,0 +1,8 @@
+com:
+  lym:
+    spring:
+      service:
+        enabled: true
+        prefix: 前缀
+        suffix: 后缀
+
