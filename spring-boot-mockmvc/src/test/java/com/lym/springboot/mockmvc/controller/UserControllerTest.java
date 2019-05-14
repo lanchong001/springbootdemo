@@ -1,7 +1,7 @@
-package com.lym.springboot.junit.controller;
+package com.lym.springboot.mockmvc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lym.springboot.junit.domain.User;
+import com.lym.springboot.mockmvc.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 /**
  * @Author: in liuyuanming
  * @Description:
- * @Date:Created in  2019/5/7 14:40
+ * @Date:Created in  2019/5/14 19:15
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -74,5 +74,39 @@ public class UserControllerTest {
 
         Assert.assertTrue(status == 200);
         Assert.assertTrue(contentAsString.equals(json));
+    }
+
+    @Test
+    public void webapiExcetpionTest() throws Exception {
+        String url = "/user/webapi";
+
+        //3. 利用 mockMvc 创建请求, 录入请求url,请求类型
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(url).accept(MediaType.APPLICATION_JSON)).andReturn();
+
+        //4. 获取 webapi 返回的结果
+        MockHttpServletResponse response = mvcResult.getResponse();
+
+        int status = response.getStatus();
+        String contentAsString = response.getContentAsString();
+        System.out.println(contentAsString);
+
+        Assert.assertTrue(status == 200);
+    }
+
+    @Test
+    public void webExceptionTest() throws Exception {
+        String url = "/user/web";
+
+        //3. 利用 mockMvc 创建请求, 录入请求url,请求类型
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(url).accept(MediaType.ALL)).andReturn();
+
+        //4. 获取 webapi 返回的结果
+        MockHttpServletResponse response = mvcResult.getResponse();
+
+        int status = response.getStatus();
+        String contentAsString = response.getContentAsString();
+        System.out.println(contentAsString);
+
+        Assert.assertTrue(status == 200);
     }
 }
