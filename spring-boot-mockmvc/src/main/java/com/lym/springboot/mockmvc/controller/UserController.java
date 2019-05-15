@@ -2,7 +2,6 @@ package com.lym.springboot.mockmvc.controller;
 
 import com.lym.springboot.mockmvc.domain.ResponseResult;
 import com.lym.springboot.mockmvc.domain.User;
-import com.lym.springboot.mockmvc.exception.ServiceException;
 import com.lym.springboot.mockmvc.exception.WebApiException;
 import com.lym.springboot.mockmvc.exception.WebException;
 import org.springframework.stereotype.Controller;
@@ -53,7 +52,7 @@ public class UserController {
     @RequestMapping(value = "/webapi")
     @ResponseBody
     public ResponseResult<User> webApiException() {
-        throw new WebApiException(-1,"web api error");
+        throw new WebApiException(-1, "web api error");
     }
 
     /**
@@ -63,17 +62,17 @@ public class UserController {
      */
     @RequestMapping(value = "/web")
     public String webException() {
-        throw new WebException(-1,"web error");
+        throw new WebException(-1, "web error");
     }
 
     /**
-     * ServiceException
+     * WebException
      *
      * @return
      */
-    @RequestMapping(value = "/service")
-    @ResponseBody
-    public ResponseResult<User> serviceException() {
-        throw new ServiceException(-1,"service error");
+    @RequestMapping(value = "/500")
+    public String error_500() {
+        int i = 1 / 0;
+        return "";
     }
 }

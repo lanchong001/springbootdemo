@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 public enum ResultEnum {
-    SECCESS(1, "操作成功"),
+    SECCESS(0, "操作成功"),
     FAILURE(-1, "操作失败"),
     INPUT_PARAM_ERROR(10001, "参数异常"),
     ;

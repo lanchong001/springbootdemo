@@ -40,3 +40,6 @@ public class ExceptionController {
     }
 }
 ```
+
+http://www.zhaojun.im/springboot-exception/
+http://www.zhaojun.im/springboot-exception-expand/
