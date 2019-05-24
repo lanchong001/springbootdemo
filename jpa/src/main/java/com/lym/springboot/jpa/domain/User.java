@@ -9,17 +9,22 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "user")
+/**
+ * 注意   User.withNameAndAddressNamedQuery User 必须大写
+ *        select p from User p where p.name=?1 and p.address=?2  User必须大写
+ */
+@NamedQuery(name = "User.withNameAndAddressNamedQuery", query = "select p from User p where p.name=?1 and p.address=?2")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
-    private int age;
+    private Integer age;
+
+    private String address;
 
     public long getId() {
         return id;

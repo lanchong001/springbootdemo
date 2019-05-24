@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,6 +21,7 @@ import static org.junit.Assert.*;
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
+@EnableJpaRepositories
 public class UserRepositoryTest {
 
     @Autowired
@@ -88,4 +90,34 @@ public class UserRepositoryTest {
         Assert.assertTrue(user.getName().equals("test jpa 555"));
     }
 
+    @Test
+    public void testFindByAddress() {
+        List<User> list = userRepository.findByAddress("湖南");
+        Assert.assertTrue(list != null && list.size() > 0);
+    }
+
+    @Test
+    public void testFindByNameAndAddress() {
+        User user = userRepository.findByNameAndAddress("zhangsan99","湖南");
+        Assert.assertTrue(user != null && user.getAge() > 0);
+    }
+
+    @Test
+    public void testWithNameAndAddressQuery1() {
+        User user = userRepository.withNameAndAddressQuery1("zhangsan99","湖南");
+        Assert.assertTrue(user != null && user.getAge() > 0);
+    }
+
+    @Test
+    public void testWithNameAndAddressQuery2() {
+        User user = userRepository.withNameAndAddressQuery2("test jpa 555","湖北");
+        System.out.println(user);
+        Assert.assertTrue(user != null && user.getAge() > 0);
+    }
+
+    @Test
+    public void testWithNameAndAddressNamedQuery() {
+        List<User> list = userRepository.withNameAndAddressNamedQuery("zhangsan99","湖南");
+        Assert.assertTrue(list != null && list.size() > 0);
+    }
 }
