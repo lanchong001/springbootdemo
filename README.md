@@ -28,7 +28,7 @@ spring-boot-starter | 快速开发一个自定义 Spring Boot Starter，并使�
 spring-boot-starter-client | spring-boot-start jar包引用测试Demo | 2019.05.10
 spring-boot-mockmvc | MockMVC 单元测试Demo, 全局异常测试| 2019.05.14
 spring-boot-sharding-jdbc | springboot使用JPA集成sharding-jdbc进行分表| 2019.05.21
-
+jpa-custom | 自定义Jpa类 | 2019.05.27
 
 http://www.importnew.com/26055.html
 https://blog.csdn.net/gnail_oug/article/details/80662553
