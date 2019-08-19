@@ -12,5 +12,43 @@
 <div th:text="${date}">
     dsddd
 </div>
+<button>点我</button>
+<script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js">
+</script>
+<script>
+
+    $(document).ready(function () {
+        var data = {"clientUrl": "Server_Login", "isAuth": "0"};
+        $("button").click(function () {
+            $.ajax({
+                type: "post",
+                url: contextPath() + "/getXQrcodeUrl",
+                data: data,
+                async: false, //同步
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        });
+    });
+
+    /**
+     * 获取到当前项目的名称
+     * @returns {*}
+     */
+    var contextPath = function () {
+        var path = "/" + location.pathname.split("/")[1];
+        //当项目的目录是根目录的情况
+        if (path == "/login") {
+            return "";
+        } else {
+            return path;
+        }
+        console.log("location.pathname:" + location.pathname);
+    }
+
+</script>
+
 </body>
 </html>

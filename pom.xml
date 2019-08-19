@@ -23,7 +23,7 @@
     <!-- 模块说明：这里声明多个子模块 -->
     <modules>
         <module>jdbctemplate</module>
-        <module>jpa</module>
+        <!--<module>jpa</module>-->
         <module>jpa-druid-yml</module>
         <module>jpa-druid-javaconfig</module>
         <module>mybatis-xml</module>
@@ -40,6 +40,8 @@
         <module>spring-boot-java-config</module>
         <module>spring-boot-velocity</module>
         <module>spring-boot-velocity-generate-code</module>
+        <module>mysql6.0</module>
+        <module>spring-maven-mybatis</module>
     </modules>
 
     <properties>
