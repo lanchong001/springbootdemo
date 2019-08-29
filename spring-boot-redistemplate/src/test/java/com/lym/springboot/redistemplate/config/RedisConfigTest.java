@@ -29,7 +29,7 @@ public class RedisConfigTest {
      */
     @Test
     public void testSet() {
-        String ip = "10.254.2.245:8002";
+        String ip = "10.249.0.121:30024";
         //redis key : 前缀 + ip : port
         String key = String.format("%s%s", CAS_WHITE_LIST, ip);
         WhileList whileList1 = new WhileList();
